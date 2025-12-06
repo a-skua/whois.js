@@ -2,11 +2,13 @@ import { gray, green, italic } from "@std/fmt/colors";
 
 export const me: string = `
 ${italic("name")} = "${green("asuka")}"
-${italic("role")} = "${green("SWE")}"
 ${italic("lang")} = "${green("ja")}"
 ${italic("loc")}  = "${green("Japan")}"
 ${italic("fav")}  = "${green("WebAssembly")}"
-${italic("org")}  = "${green("株式会社モニクル")}"
+
+${gray("[org]")}
+${italic("name")} = "${green("株式会社モニクル")}"
+${italic("role")} = "${green("SWE")}"
 
 ${gray("[sns]")}
 ${italic("X")}       = "${green("@a_skua")}"
