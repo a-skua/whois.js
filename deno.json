@@ -1,13 +1,12 @@
 {
   "name": "@askua/whois",
-  "version": "2025.12.5",
+  "version": "2025.12.6",
   "description": "WHOIS ME",
   "license": "MIT",
   "exports": "./main.ts",
   "tasks": {
-    "check": {
-      "command": "deno publish --dry-run"
-    }
+    "version": "jq -r .version < deno.json",
+    "check": "deno publish --dry-run"
   },
   "imports": {
     "@std/fmt": "jsr:@std/fmt@^1.0.8"
